@@ -1,0 +1,1896 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Cliges</title>
+            <author>Chrétien de Troyes</author>
+            <respStmt>
+               <resp>Collated by</resp>
+               <persName>
+                  <forename>Benedetta</forename>
+                  <surname>Salvati</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p part="N">Sample of a private working document</p>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <!-- Description of the work (including a date range of origin) whose manuscript tradition is detailed below -->
+            <bibl>
+               <title xml:lang="fro">Cliges</title>
+               <date notBefore="1172" notAfter="1181"/>
+            </bibl>
+            <listWit>
+               <witness xml:id="A" n="A">
+                  <origDate notBefore="1226" notAfter="1235"/>
+               </witness>
+               <witness xml:id="B" n="B">
+                  <origDate notBefore="1226" notAfter="1250"/>
+               </witness>
+               <witness xml:id="P" n="P">
+                  <origDate notBefore="1288" notAfter="1288"/>
+               </witness>
+               <witness xml:id="C" n="C">
+                  <origDate notBefore="1241" notAfter="1260"/>
+               </witness>
+               <witness xml:id="R" n="R">
+                  <origDate notBefore="1201" notAfter="1260"/>
+               </witness>
+               <witness xml:id="S" n="S">
+                  <origDate notBefore="1201" notAfter="1250"/>
+               </witness>
+               <witness xml:id="T" n="T">
+                  <origDate notBefore="1301" notAfter="1360"/>
+               </witness>
+               <witness xml:id="M" n="M">
+                  <origDate notBefore="1201" notAfter="1220"/>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <!--
+         <app>	@ana1	signif  | indif | unknown (S|I|U)	trier les phénomènes intéressants
+         <app>	@ana2	mono | poly | unknown (M|P|U)	isoler innovations monogénétiques
+         <app>	@ana3	conj | sep | none (C|S|N)	partitions conjonctif/séparatif
+         <app>	@type	graphemic | morphologic | morphosyntactic | lexsem:weak,strong,nonsense | absence,order etc.	trier par domaine
+         <lem>	@cert	high | medium | low | 0	filtrer les sites selon la fiabilité du texte établi
+         <rdg>	@cause	paleo | homt | ditt | normalisation | banalisation | other	cause/genèse de l’innovation 
+         <rdg>	@cause:	high | medium | low	filtrer les valeurs causales incertaines
+         <rdg>	@resp/@VarSeq	scribe | archetype | subarchetype | editor | unknown	niveau d’attribution de l’innovation
+      -->
+      <body>
+         <l xml:id="l-1" part="N">Cil qui fist d'Erec et d'Enide</l>
+         <l xml:id="l-2" part="N">
+            <app xml:id="l-2_1" type="graphemic">
+               <rdg wit="#A #B #C #P #R">Et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>les <app xml:id="l-2_2" type="graphemic">
+               <rdg wit="#B #P">commandemens</rdg>
+               <rdg wit="#A #R">comandemenz</rdg>
+               <rdg wit="#C">commandemenz</rdg>
+               <rdg wit="#S">comandemanz</rdg>
+            </app>d'Ovide </l>
+         <l xml:id="l-3" part="N">
+            <app xml:id="l-3_1" type="graphemic">
+               <rdg wit="#A #B #C #P #R">Et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>l'Art d' <app xml:id="l-3_2" type="graphemic">
+               <rdg wit="#A #C #P #R #S">amors</rdg>
+               <rdg wit="#B">amor</rdg>
+            </app>
+            <app xml:id="l-3_3" type="graphemic">
+               <rdg wit="#B #C #P #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>
+            <app xml:id="l-3_4" type="lexsem:weak" subtype="assoc">
+               <rdg wit="#A #B #C #S #R">
+                  <app xml:id="l-3_5" type="graphemic">
+                     <rdg wit="#A #B">romans</rdg>
+                     <rdg wit="#C #R #S">romanz</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#P">rime</rdg>
+            </app>mist </l>
+         <l xml:id="l-4" part="N">Et le mors de l' <app xml:id="l-4_1" type="graphemic">
+               <rdg wit="#A #C #P #R #S">espaule</rdg>
+               <rdg wit="#B">espaulle</rdg>
+            </app>fist, </l>
+         <l xml:id="l-5" part="N">
+            <app xml:id="l-5_1" type="graphemic">
+               <rdg wit="#P">Du</rdg>
+               <rdg wit="#A #B #R">del</rdg>
+               <rdg wit="#C #S">dou</rdg>
+            </app>roi Marc et d' <app xml:id="l-5_2" type="graphemic">
+               <rdg wit="#P">Yseut</rdg>
+               <rdg wit="#A">ysalt</rdg>
+               <rdg wit="#B">yselt</rdg>
+               <rdg wit="#C">iseut</rdg>
+               <rdg wit="#R">isout</rdg>
+               <rdg wit="#S">isent</rdg>
+            </app>La Blonde </l>
+         <l xml:id="l-6" part="N">Et de la <app xml:id="l-6_1" type="graphemic">
+               <rdg wit="#A #B #C #P #R">hupe</rdg>
+               <rdg wit="#S">upe</rdg>
+            </app>et de l' <app xml:id="l-6_2" type="graphemic">
+               <rdg wit="#A #B #C #P #S">aronde</rdg>
+               <rdg wit="#R">haronde</rdg>
+            </app>
+         </l>
+         <l xml:id="l-7" part="N">Et <app xml:id="l-7_1" type="graphemic">
+               <rdg wit="#A #B #P #R">del</rdg>
+               <rdg wit="#C #S">dou</rdg>
+            </app>
+            <app xml:id="l-7_2" type="graphemic">
+               <rdg wit="#A #P">rossignol</rdg>
+               <rdg wit="#B">rosignol</rdg>
+               <rdg wit="#C">rousignol</rdg>
+               <rdg wit="#R">roissignol</rdg>
+               <rdg wit="#S">rossinol</rdg>
+            </app>la muance, </l>
+         <l xml:id="l-8" part="N">
+            <app xml:id="l-8_1" type="graphemic">
+               <rdg wit="#A #B #C #P #R">Un</rdg>
+               <rdg wit="#S">u</rdg>
+            </app>
+            <!-- JBC: weak or strong? -->
+            <app xml:id="l-8_2" type="lexsem:weak" subtype="assoc">
+               <rdg wit="#A #C #P #R #S">novel</rdg>
+               <rdg wit="#B">autre</rdg>
+            </app>conte <app xml:id="l-8_3" type="graphemic">
+               <rdg wit="#P">recommence</rdg>
+               <rdg wit="#A">rancomance</rdg>
+               <rdg wit="#B">recommance</rdg>
+               <rdg wit="#C">recomence</rdg>
+               <rdg wit="#R #S">recomance</rdg>
+            </app>
+         </l>
+         <l xml:id="l-9" part="N">D'un <app xml:id="l-9_1" type="graphemic">
+               <rdg wit="#B #C #P #R #S">vallet</rdg>
+               <rdg wit="#A">vaslet</rdg>
+            </app>qui <app xml:id="l-9_2" type="graphemic">
+               <rdg wit="#B #C #P #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>
+            <app xml:id="l-9_3" type="graphemic">
+               <rdg wit="#P">Gresse</rdg>
+               <rdg wit="#A #C #R #S">grece</rdg>
+               <rdg wit="#B">gresce</rdg>
+            </app>fu </l>
+         <l xml:id="l-10" part="N">
+            <app xml:id="l-10_1" type="graphemic">
+               <rdg wit="#A #B #P">Del</rdg>
+               <rdg wit="#C #S">dou</rdg>
+               <rdg wit="#R">du</rdg>
+            </app>
+            <app xml:id="l-10_2" type="graphemic">
+               <rdg wit="#C #R #P">lignage</rdg>
+               <rdg wit="#A #B">linage</rdg>
+               <rdg wit="#S">lignaige</rdg>
+            </app>le roi <app xml:id="l-10_3" type="graphemic">
+               <rdg wit="#A #B #C #P #R">Artu</rdg>
+               <rdg wit="#S">artru</rdg>
+            </app>. </l>
+         <l xml:id="l-11" part="N">
+            <app xml:id="l-11_1" type="absence">
+               <rdg wit="#A #C #P #R #S">
+                  <app xml:id="l-11_2" type="graphemic">
+                     <rdg wit="#C #P #R">Mais</rdg>
+                     <rdg wit="#A #S">mes</rdg>
+                  </app>
+                  <app xml:id="l-11_3" type="graphemic">
+                     <rdg wit="#P">ains</rdg>
+                     <rdg wit="#A #R">ainz</rdg>
+                     <rdg wit="#C #S">einz</rdg>
+                  </app>que <app xml:id="l-11_4" type="lexsem:strong">
+                     <rdg wit="#A #B #C #P #R" varSeq="0" cert="high">de lui</rdg>
+                     <rdg wit="#S" varSeq="1">nulle</rdg>
+                  </app>
+                  <app xml:id="l-11_5" type="morphologic">
+                     <rdg wit="#A #B #C #P #S">rien</rdg>
+                     <rdg wit="#R">riens</rdg>
+                  </app>vos die </rdg>
+               <rdg wit="#B"/>
+            </app>, </l>
+         <l xml:id="l-12" part="N">
+            <app xml:id="l-12_1" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-12_2" type="graphemic">
+                     <rdg wit="#B #P">Ores</rdg>
+                     <rdg wit="#A">orroiz</rdg>
+                     <rdg wit="#C">orrois</rdg>
+                     <rdg wit="#R">orrez</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">orai</rdg>
+            </app>de son pere la vie : </l>
+         <l xml:id="l-13" part="N">
+            <app xml:id="l-13_1" type="graphemic">
+               <rdg wit="#C #P #R #S">Dont</rdg>
+               <rdg wit="#A">dom</rdg>
+               <rdg wit="#B">donc</rdg>
+            </app>il fu et de quel <app xml:id="l-13_2" type="graphemic">
+               <rdg wit="#C #P #R #S">lignage</rdg>
+               <rdg wit="#A #B">linage</rdg>
+            </app>. </l>
+         <l xml:id="l-14" part="N">Tant fu <app xml:id="l-14_1" type="graphemic">
+               <rdg wit="#P">preus</rdg>
+               <rdg wit="#A #C #S">preuz</rdg>
+               <rdg wit="#B">prous</rdg>
+               <rdg wit="#R">pruz</rdg>
+            </app>et de <app xml:id="l-14_2" type="lexsem:strong">
+               <rdg wit="#P #C" varSeq="0" cert="medium">haut</rdg>
+               <rdg wit="#A #B #R #S" varSeq="1">fier</rdg>
+            </app>
+            <app xml:id="l-14_3" type="lexsem:strong">
+               <rdg wit="#P #C" varSeq="0" cert="medium">parage</rdg>
+               <rdg wit="#A #B #R #S" varSeq="1">corage</rdg>
+            </app>
+         </l>
+         <l xml:id="l-15" part="N">Que, por pris et por los <app xml:id="l-15_1" type="lexsem:weak"
+               subtype="lexmorph">
+               <rdg wit="#A #C #P #R">conquerre</rdg>
+               <rdg wit="#B #S">aquerre</rdg>
+            </app>, </l>
+         <l xml:id="l-16" part="N">Ala de <app xml:id="l-16_1" type="graphemic">
+               <rdg wit="#P">Gresse</rdg>
+               <rdg wit="#A #C #R">grece</rdg>
+               <rdg wit="#B #S">gresce</rdg>
+            </app>
+            <app xml:id="l-16_2" type="graphemic">
+               <rdg wit="#B #C #P #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>
+            <app xml:id="l-16_3" type="graphemic">
+               <rdg wit="#A #B #C #P #R">Engleterre</rdg>
+               <rdg wit="#S">englaterre</rdg>
+            </app>, </l>
+         <l xml:id="l-17" part="N">
+            <app xml:id="l-17_1" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #S">Qui</rdg>
+               <rdg wit="#R">que</rdg>
+            </app>lors estoit <app xml:id="l-17_2" type="graphemic">
+               <rdg wit="#A #B #P #R #S">Bretaigne</rdg>
+               <rdg wit="#C">breteigne</rdg>
+            </app>dite. </l>
+         <l xml:id="l-18" part="N">Ceste estoire <app xml:id="l-18_1" type="graphemic">
+               <rdg wit="#A #B #C #P">trovons</rdg>
+               <rdg wit="#R #S">trovoms</rdg>
+            </app>escrite, </l>
+         <l xml:id="l-19" part="N">Que conter <app xml:id="l-19_1" type="lexsem:strong">
+               <rdg wit="#A #B #P #S #R" varSeq="0" cert="high">
+                  <app xml:id="l-19_2" type="absence">
+                     <rdg wit="#A #B #P #S">vos</rdg>
+                     <rdg wit="#R"/>
+                  </app>
+                  <app xml:id="l-19_3" type="graphemic">
+                     <rdg wit="#B #P">voel</rdg>
+                     <rdg wit="#A">vuel</rdg>
+                     <rdg wit="#S">vueil</rdg>
+                     <rdg wit="#R">voil</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#C" varSeq="1">m'oez</rdg>
+            </app>
+            <app xml:id="l-19_4" type="graphemic">
+               <rdg wit="#A #B #C #P #R">et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>
+            <app xml:id="l-19_5" type="graphemic">
+               <rdg wit="#A #B #C #P">retraire</rdg>
+               <rdg wit="#R">retrere</rdg>
+               <rdg wit="#S">ratraire</rdg>
+            </app>, </l>
+         <l xml:id="l-20" part="N">En .i. des livres de l' <app xml:id="l-20_1" type="graphemic">
+               <rdg wit="#P">armaire</rdg>
+               <rdg wit="#A #B #C">aumaire</rdg>
+               <rdg wit="#R">aumere</rdg>
+               <rdg wit="#S">amaire</rdg>
+            </app>
+         </l>
+         <l xml:id="l-21" part="N">Mon <app xml:id="l-21_1" type="graphemic">
+               <rdg wit="#P #B">signor</rdg>
+               <rdg wit="#A #C #R #S">seignor</rdg>
+            </app>Saint <app xml:id="l-21_2" type="graphemic">
+               <rdg wit="#P">Piere</rdg>
+               <rdg wit="#A #B #C #R #S">pere</rdg>
+            </app>a <app xml:id="l-21_3" type="graphemic">
+               <rdg wit="#B #P">Biauvais</rdg>
+               <rdg wit="#A">biauvez</rdg>
+               <rdg wit="#C">beauvez</rdg>
+               <rdg wit="#R">biavaiz</rdg>
+               <rdg wit="#S">biauves</rdg>
+            </app>: </l>
+         <l xml:id="l-22" part="N">De la fu <app xml:id="l-22_1" type="lexsem:weak"
+               subtype="grammeme">
+               <rdg wit="#A #B #P #R">li</rdg>
+               <rdg wit="#C #S">
+                  <app xml:id="l-22_2" type="graphemic">
+                     <rdg wit="#C">cis</rdg>
+                     <rdg wit="#S">cist</rdg>
+                  </app>
+               </rdg>
+            </app>
+            <app xml:id="l-22_3" type="lexsem:weak" subtype="assoc">
+               <rdg wit="#A #B #C #P #R">contes</rdg>
+               <rdg wit="#S">livres</rdg>
+            </app>
+            <app xml:id="l-22_4" type="lexsem:weak" subtype="lexmorph">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-22_5" type="graphemic">
+                     <rdg wit="#B #P">estrais</rdg>
+                     <rdg wit="#A #C">estrez</rdg>
+                     <rdg wit="#R">estraiz</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">restraiz</rdg>
+            </app>
+         </l>
+         <l xml:id="l-23" part="N">
+            <app xml:id="l-23_1" type="absence">
+               <rdg wit="#C #P #R #S">Dont cest <app xml:id="l-23_2" type="graphemic">
+                     <rdg wit="#P">romans</rdg>
+                     <rdg wit="#C #R #S">romanz</rdg>
+                  </app>fist <app xml:id="l-23_3" type="graphemic">
+                     <rdg wit="#P">Crestiiens</rdg>
+                     <rdg wit="#C #R">crestiens</rdg>
+                     <rdg wit="#S">crestians</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#A #B"/>
+            </app>. </l>
+         <l xml:id="l-24" part="N">
+            <app xml:id="l-24_1" type="absence">
+               <rdg wit="#C #P #R #S">Li livres est molt <app xml:id="l-24_2" type="graphemic">
+                     <rdg wit="#P">anciiens</rdg>
+                     <rdg wit="#C #R #S">anciens</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#A #B"/>
+            </app>
+         </l>
+         <l xml:id="l-25" part="N">Qui <app xml:id="l-25_1" type="graphemic">
+               <rdg wit="#C #P #R">tesmoigne</rdg>
+               <rdg wit="#A">tesmoingne</rdg>
+               <rdg wit="#B">tesmogne</rdg>
+               <rdg wit="#S">tesmaigne</rdg>
+            </app>l' <app xml:id="l-25_2" type="graphemic">
+               <rdg wit="#A #C #P #R #S">estoire</rdg>
+               <rdg wit="#B">estore</rdg>
+            </app>a voire : </l>
+         <l xml:id="l-26" part="N">
+            <app xml:id="l-26_1" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#P">De tant</rdg>
+               <rdg wit="#A #B #C #R #S">por ce</rdg>
+            </app>
+            <app xml:id="l-26_2" type="order">
+               <rdg xml:id="l-26_t-3" wit="#P #B #R #A #C">
+                  <app xml:id="l-26_3" type="graphemic">
+                     <rdg wit="#P #B #R">fait</rdg>
+                     <rdg wit="#A #C">fet</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S"/>
+            </app>
+            <app xml:id="l-26_4" type="absence">
+               <rdg wit="#A #B #C #P #R">ele</rdg>
+               <rdg wit="#S"/>
+            </app>
+            <app xml:id="l-26_5" type="absence">
+               <rdg wit="#P #B #R #A #C "/>
+               <rdg wit="#S">si</rdg>
+            </app>
+            <app xml:id="l-26_6" type="absence">
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S" corresp="#l-26_t-3">fist</rdg>
+            </app>
+            <app xml:id="l-26_7" type="graphemic">
+               <rdg wit="#P">miex</rdg>
+               <rdg wit="#A">mialz</rdg>
+               <rdg wit="#B">mius</rdg>
+               <rdg wit="#C #S">meulz</rdg>
+               <rdg wit="#R">mielz</rdg>
+            </app>a <app xml:id="l-26_8" type="graphemic">
+               <rdg wit="#A #B #P #R #S">croire</rdg>
+               <rdg wit="#C">croirre</rdg>
+            </app>. </l>
+         <l xml:id="l-27" part="N">Par les livres que <app xml:id="l-27_1" type="graphemic">
+               <rdg wit="#A #C #P #R #S">nos</rdg>
+               <rdg wit="#B">nous</rdg>
+            </app>
+            <app xml:id="l-27_2" type="graphemic">
+               <rdg wit="#A #B #C #P #S">avons</rdg>
+               <rdg wit="#R">avoms</rdg>
+            </app>
+         </l>
+         <l xml:id="l-28" part="N">Les <app xml:id="l-28_1" type="graphemic">
+               <rdg wit="#P #B">fais</rdg>
+               <rdg wit="#A">fez</rdg>
+               <rdg wit="#C #R #S">faiz</rdg>
+            </app>
+            <app xml:id="l-28_2" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #B #C #P #R">des</rdg>
+               <rdg wit="#S">as</rdg>
+            </app>anciens <app xml:id="l-28_3" type="graphemic">
+               <rdg wit="#A #B #C #P #S">savons</rdg>
+               <rdg wit="#R">savoms</rdg>
+            </app>
+         </l>
+         <l xml:id="l-29" part="N">
+            <app xml:id="l-29_1" type="graphemic">
+               <rdg wit="#A #B #C #P #R">Et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>
+            <app xml:id="l-29_2" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#P #A #B #R #C">
+                  <app xml:id="l-29_3" type="graphemic">
+                     <rdg wit="#P #A #B #R">del</rdg>
+                     <rdg wit="#C">dou</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">dune</rdg>
+            </app>
+            <app xml:id="l-29_4" type="lexsem:nonsense">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-29_5" type="graphemic">
+                     <rdg wit="#B #C #P #R">siecle</rdg>
+                     <rdg wit="#A">siegle</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">cle</rdg>
+            </app>
+            <!-- JBC: app avec une seule leçon? -->
+            <!--  
+                                    <app xml:id="l-29_2">
+                                       <rdg wit="#A #B #C #P #R #S">
+                                          <app xml:id="l-29_3" type="lexsem:weak" subtype="grammeme">
+                                             <rdg wit="#A #B #C #P #R">
+                                                <app xml:id="l-29_4">
+                                                   <rdg wit="#P #A #B #R">del</rdg>
+                                                   <rdg wit="#C">dou</rdg>
+                                                </app>
+                                             </rdg>
+                                             <rdg wit="#S" cause="segmentation">dune</rdg>
+                                          </app>
+                                          <app xml:id="l-29_5" type="lexsem:nonsense">
+                                             <rdg wit="#A #B #C #P #R">
+                                                <app xml:id="l-29_6">
+                                                   <rdg wit="#B #C #P #R">siecle</rdg>
+                                                   <rdg wit="#A">siegle</rdg>
+                                                </app>
+                                             </rdg>
+                                             <rdg wit="#S">cle</rdg>
+                                          </app>
+                                       </rdg>
+                                    </app> -->qui fu jadis. </l>
+         <l xml:id="l-30" part="N">
+            <app xml:id="l-30_1" type="lexsem:strong">
+               <rdg wit="#A #B #C #R #S" varSeq="0" cert="high">Ce</rdg>
+               <rdg wit="#P" varSeq="1">Or</rdg>
+            </app>
+            <app xml:id="l-30_2" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #B #C #R #S">nos</rdg>
+               <rdg wit="#P">vos</rdg>
+            </app>
+            <app xml:id="l-30_3" type="morphosyntactic">
+               <rdg wit="#A #B #C #R #S">ont</rdg>
+               <rdg wit="#P">ert</rdg>
+            </app>
+            <app xml:id="l-30_4" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #B #C #R #S">
+                  <app xml:id="l-30_5" type="morphosyntactic">
+                     <rdg wit="#A #B #C #R">nostre</rdg>
+                     <rdg wit="#S">nos</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#P">par</rdg>
+            </app>
+            <app xml:id="l-30_6" type="absence">
+               <rdg wit="#A #B #C #R #S"/>
+               <rdg wit="#P">cest</rdg>
+            </app>
+            <!-- JBC: should we treat simple variation on the marker of the subject case as a morphologic or
+                                    morphosyntactic issue? Or distinguish according to known alternance markers (like ber/barons) vs. 
+                                    not typical alternances?
+                                    -->
+            <app xml:id="l-30_7" type="morphologic">
+               <rdg wit="#A #B #C #P #R">livre</rdg>
+               <rdg wit="#S">livres</rdg>
+            </app>
+            <app xml:id="l-30_8" type="graphemic">
+               <rdg wit="#A #B #C #P #R">apris</rdg>
+               <rdg wit="#S">apriz</rdg>
+            </app>: </l>
+         <l xml:id="l-31" part="N">
+            <app xml:id="l-31_1" type="morphologic">
+               <rdg wit="#C #P #R #S">Que</rdg>
+               <rdg wit="#A #B">qu'</rdg>
+            </app>
+            <app xml:id="l-31_2" type="absence">
+               <rdg wit="#C #P #S #R"/>
+               <rdg wit="#A #B">
+                  <app xml:id="l-31_3" type="graphemic">
+                     <rdg wit="#A">an</rdg>
+                     <rdg wit="#B">en</rdg>
+                  </app>
+               </rdg>
+            </app>
+            <app xml:id="l-31_4" type="graphemic">
+               <rdg wit="#P">Gresse</rdg>
+               <rdg wit="#A #C #R #S">grece</rdg>
+               <rdg wit="#B">gresse</rdg>
+            </app>
+            <app xml:id="l-31_5" type="graphemic">
+               <rdg wit="#A #B #C #P #S">ot</rdg>
+               <rdg wit="#R">out</rdg>
+            </app>de <app xml:id="l-31_6" type="graphemic">
+               <rdg wit="#A #C #P #S">chevalerie</rdg>
+               <rdg wit="#B">cevalerie</rdg>
+               <rdg wit="#R">chivalerie</rdg>
+            </app>
+         </l>
+         <l xml:id="l-32" part="N">Le <app xml:id="l-32_1" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #R">premier</rdg>
+               <rdg wit="#S">premiers</rdg>
+            </app>los et de clergie ; </l>
+         <l xml:id="l-33" part="N">Puis vint <app xml:id="l-33_1" type="graphemic">
+               <rdg wit="#P #A #C #S">chevalerie</rdg>
+               <rdg wit="#B">cevalerie</rdg>
+               <rdg wit="#R">chivalerie</rdg>
+            </app>a Rome </l>
+         <l xml:id="l-34" part="N">
+            <app xml:id="l-34_1" type="graphemic">
+               <rdg wit="#A #B #C #P #R">Et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>
+            <app xml:id="l-34_2" type="absence">
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S">ia</rdg>
+            </app>de <app xml:id="l-34_3" type="absence">
+               <rdg wit="#A #B #C #P #R">la</rdg>
+               <rdg wit="#S"/>
+            </app>
+            <app xml:id="l-34_4" type="graphemic">
+               <rdg wit="#A #C #P #R #S">clergie</rdg>
+               <rdg wit="#B">clerigie</rdg>
+            </app>
+            <app xml:id="l-34_5" type="morphologic">
+               <rdg wit="#A #C #P #R #S">la</rdg>
+               <rdg wit="#B">li</rdg>
+            </app>
+            <app xml:id="l-34_6" type="graphemic">
+               <rdg wit="#A #B #P #R #S">some</rdg>
+               <rdg wit="#C">somme</rdg>
+            </app>, </l>
+         <l xml:id="l-35" part="N">
+            <app xml:id="l-35_1" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #S">Qui</rdg>
+               <rdg wit="#R">Que</rdg>
+            </app>
+            <app xml:id="l-35_2" type="morphologic">
+               <rdg wit="#P #R">ore</rdg>
+               <rdg wit="#A #B #C #S">or</rdg>
+            </app>est <app xml:id="l-35_3" type="graphemic">
+               <rdg wit="#B #C #P #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>France venue : </l>
+         <l xml:id="l-36" part="N">
+            <app xml:id="l-36_1" type="graphemic">
+               <rdg wit="#P">Diex</rdg>
+               <rdg wit="#A #B #C #R #S">dex</rdg>
+            </app>
+            <app xml:id="l-36_2" type="graphemic">
+               <rdg wit="#P">doinst</rdg>
+               <rdg wit="#A #B #C #R #S">doint</rdg>
+            </app>qu'ele i <app xml:id="l-36_3" type="graphemic">
+               <rdg wit="#A #B #C #P #R">soit</rdg>
+               <rdg wit="#S">soyt</rdg>
+            </app>
+            <app xml:id="l-36_4" type="lexsem:weak" subtype="lexmorph">
+               <rdg wit="#B #C #P #S">retenue</rdg>
+               <rdg wit="#A #R">maintenue</rdg>
+            </app>
+         </l>
+         <l xml:id="l-37" part="N">
+            <app xml:id="l-37_1" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #B #P #S">Et</rdg>
+               <rdg wit="#C #R">tant</rdg>
+            </app>que li <app xml:id="l-37_2" type="graphemic">
+               <rdg wit="#P">lius</rdg>
+               <rdg wit="#A #C #R #S">leus</rdg>
+               <rdg wit="#B">luis</rdg>
+            </app>li <app xml:id="l-37_3" type="graphemic">
+               <rdg wit="#A #B #P">abelisse</rdg>
+               <rdg wit="#C">embelisse</rdg>
+               <rdg wit="#R">enbelisse</rdg>
+               <rdg wit="#S">abellise</rdg>
+            </app>
+         </l>
+         <l xml:id="l-38" part="N">
+            <app xml:id="l-38_1" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #B #P #S">Tant</rdg>
+               <rdg wit="#C #R">si</rdg>
+            </app>que <app xml:id="l-38_2" type="lexsem:weak" subtype="lexmorph">
+               <rdg wit="#B #C #P">jamais</rdg>
+               <rdg wit="#A #R">james</rdg>
+               <rdg wit="#S">ia</rdg>
+            </app>de France <app xml:id="l-38_3" type="absence">
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S">ne</rdg>
+            </app>n'isse </l>
+         <l xml:id="l-39" part="N">L' <app xml:id="l-39_1" type="morphosyntactic">
+               <rdg wit="#A #C #R">
+                  <app xml:id="l-39_2" type="graphemic">
+                     <!-- commenta traiter toutes ces leçons aberrantes de S ? ono = onor ? -->
+                     <rdg wit="#R">onors</rdg>
+                     <rdg wit="#A">enors</rdg>
+                     <rdg wit="#C">ennors</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#P #B">onor</rdg>
+               <rdg wit="#S">ono</rdg>
+            </app>
+            <app xml:id="l-39_3" type="morphologic">
+               <!-- ces fautes n'ont aucune valeur : elles dépendent de la segmentation de la phrase : qui s'i, qu'isi (= qu'issi) etc. Dois-je 
+                                          les typer ? À quelle fin ? -->
+               <rdg wit="#A #C #P #R #S">qui</rdg>
+               <rdg wit="#B">qu'</rdg>
+            </app>
+            <app xml:id="l-39_4" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #C #P #R">s'i</rdg>
+               <rdg wit="#B">issi</rdg>
+               <rdg wit="#S">i</rdg>
+            </app>est arestee. </l>
+         <l xml:id="l-40" part="N">
+            <app xml:id="l-40_1" type="lexsem:strong">
+               <rdg wit="#A #B #C #P #R" varSeq="0" cert="high">
+                  <app xml:id="l-40_2" type="graphemic">
+                     <rdg wit="#P">Diex</rdg>
+                     <rdg wit="#A #B #C #R">des</rdg>
+                  </app>l'avoit <app xml:id="l-40_3" type="morphosyntactic">
+                     <rdg wit="#P #A #B">as</rdg>
+                     <rdg wit="#C #R">a</rdg>
+                  </app>
+                  <app xml:id="l-40_4" type="lexsem:strong">
+                     <rdg wit="#P #R" varSeq="0" cert="high">
+                        <app xml:id="l-40_5" type="graphemic">
+                           <rdg wit="#P">Grigois</rdg>
+                           <rdg wit="#R">grejois</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#A #B" varSeq="1">
+                        <app xml:id="l-40_6" type="graphemic">
+                           <rdg wit="#A">altres</rdg>
+                           <rdg wit="#B">altre</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#C">un roi</rdg>
+                  </app>
+                  <app xml:id="l-40_7" type="lexsem:strong">
+                     <rdg wit="#A #C #R" varSeq="0" cert="high">prestee</rdg>
+                     <rdg wit="#B" varSeq="2" cert="low">paree</rdg>
+                     <rdg wit="#P" varSeq="1" cert="medium">donee</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" varSeq="1">dont ele est prisee et dotee</rdg>
+            </app>
+         </l>
+         <!-- comment traiter ces cas-ci ? réfection d'un vers, mais mot à la rime identique/similaire (faute lecture du 
+                                 copiste de S) -->
+         <l xml:id="l-41" part="N">
+            <app xml:id="l-41_1" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#P #R #S">
+                  <app xml:id="l-41_2" type="graphemic">
+                     <rdg wit="#P">Mais</rdg>
+                     <rdg wit="#R #S">mes</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#A #B">car</rdg>
+               <rdg wit="#C">que</rdg>
+            </app>
+            <app xml:id="l-41_3" type="morphosyntactic">
+               <rdg wit="#A #C #S">des</rdg>
+               <rdg wit="#P #B #R">de</rdg>
+            </app>
+            <app xml:id="l-41_4" type="lexsem:strong">
+               <rdg wit="#A #C #P #R #S" varSeq="0" cert="high">
+                  <app xml:id="l-41_5" type="graphemic">
+                     <rdg wit="#P">Grigois</rdg>
+                     <rdg wit="#A #C">grezois</rdg>
+                     <rdg wit="#R">gregois</rdg>
+                     <rdg wit="#S">grejois</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#B" varSeq="1">francois</rdg>
+            </app>ne <app xml:id="l-41_6" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #S">des</rdg>
+               <rdg wit="#R">de</rdg>
+            </app>Romains </l>
+         <l xml:id="l-42" part="N">Ne <app xml:id="l-42_1" type="absence">
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S">voi</rdg>
+            </app>
+            <app xml:id="l-42_2" type="morphosyntactic">
+               <rdg wit="#P">di</rdg>
+               <rdg wit="#A">dit</rdg>
+               <rdg wit="#B #C">dist</rdg>
+               <rdg wit="#R">dirrai</rdg>
+               <rdg wit="#S">dire</rdg>
+            </app>
+            <app xml:id="l-42_3" type="absence">
+               <rdg wit="#P #R #A #C #B">
+                  <app xml:id="l-42_4" type="lexsem:strong">
+                     <rdg wit="#P #R" varSeq="0" cert="medium">ore</rdg>
+                     <rdg wit="#A #C" varSeq="1">
+                        <app xml:id="l-42_5" type="graphemic">
+                           <rdg wit="#A">an</rdg>
+                           <rdg wit="#C">en</rdg>
+                        </app>mes </rdg>
+                     <rdg wit="#B">li contes</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S"/>
+            </app>ne plus ne <app xml:id="l-42_6" type="absence">
+               <rdg wit="#A #B #C #P #R">mains</rdg>
+               <rdg wit="#S"/>
+            </app>: </l>
+         <l xml:id="l-43" part="N">D' <app xml:id="l-43_1" type="graphemic">
+               <rdg wit="#P #B">aus</rdg>
+               <rdg wit="#A">ax</rdg>
+               <rdg wit="#C #S">eus</rdg>
+               <rdg wit="#R">els</rdg>
+            </app>est <app xml:id="l-43_2" type="morphologic">
+               <rdg wit="#A #C #P #R">la</rdg>
+               <rdg wit="#B #S">li</rdg>
+            </app>parole <app xml:id="l-43_3" type="graphemic">
+               <rdg wit="#A #B #C #P #R">remese</rdg>
+               <rdg wit="#S">remesse</rdg>
+            </app>
+         </l>
+         <l xml:id="l-44" part="N">
+            <app xml:id="l-44_1" type="absence">
+               <rdg wit="#A #B #C #P">Et</rdg>
+               <rdg wit="#S #R"/>
+            </app>
+            <app xml:id="l-44_2" type="graphemic">
+               <rdg wit="#A #B #P #S #R">estainte</rdg>
+               <rdg wit="#C">esteinte</rdg>
+            </app>
+            <app xml:id="l-44_3" type="absence">
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S">en</rdg>
+            </app>
+            <app xml:id="l-44_4" type="absence">
+               <rdg wit="#A #B #C #P"/>
+               <rdg wit="#R #S">est</rdg>
+            </app>la vive <app xml:id="l-44_5" type="graphemic">
+               <!-- encore une fois, comment considérer la leçon de S ?? -->
+               <rdg wit="#A #B #C #P #R">brese</rdg>
+               <rdg wit="#S">brisee</rdg>
+            </app>. </l>
+         <l xml:id="l-45" part="N">
+            <app xml:id="l-45_1" type="graphemic">
+               <rdg wit="#P">Crestiiens</rdg>
+               <rdg wit="#A #C #B #R #S">crestiens</rdg>
+            </app>
+            <app xml:id="l-45_2" type="graphemic">
+               <rdg wit="#P #B">commence</rdg>
+               <rdg wit="#A #R">comance</rdg>
+               <rdg wit="#C #S">comence</rdg>
+            </app>son conte </l>
+         <l xml:id="l-46" part="N">Si <app xml:id="l-46_1" type="morphologic">
+               <rdg wit="#A #B #C #P #R">com</rdg>
+               <rdg wit="#S">come</rdg>
+            </app>
+            <app xml:id="l-46_2" type="morphologic">
+               <rdg wit="#A #B #P">li</rdg>
+               <rdg wit="#C #R #S">l'</rdg>
+            </app>
+            <app xml:id="l-46_3" type="lexsem:strong" ana="mono:sep">
+               <rdg wit="#A #B #P" varSeq="0" cert="high">livres</rdg>
+               <rdg wit="#C #R #S" varSeq="1">estoire</rdg>
+            </app>
+            <app xml:id="l-46_4" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #P #S">nos</rdg>
+               <rdg wit="#B #C #R">
+                  <app xml:id="l-46_5" type="morphosyntactic">
+                     <rdg wit="#B">li</rdg>
+                     <rdg wit="#C #R">le</rdg>
+                  </app>
+               </rdg>
+            </app>
+            <app xml:id="l-46_6" type="graphemic">
+               <rdg wit="#B #P">raconte</rdg>
+               <rdg wit="#A #C #R #S">reconte</rdg>
+            </app>
+         </l>
+         <l xml:id="l-47" part="N">
+            <app xml:id="l-47_1" type="morphosyntactic">
+               <rdg wit="#P #B">Qu'</rdg>
+               <rdg wit="#A #C #R #S">qui</rdg>
+            </app>
+            <app xml:id="l-47_2" type="absence">
+               <rdg wit="#P #B">il</rdg>
+               <rdg wit="#A #C #R #S"/>
+            </app>
+            <!-- JBC: je recode avec présence/absence -->
+            <!--<app xml:id="l-47_3" type="morphosyntactic">
+                                       <rdg wit="#P #B #S">
+                                          <app xml:id="l-47_4">
+                                             <rdg wit="#P #B">traite</rdg>
+                                             <rdg wit="#S">trete</rdg>
+                                          </app>
+                                       </rdg>
+                                       <rdg wit="#A #C #R">
+                                          <app xml:id="l-47_5">
+                                             <rdg wit="#A">trez</rdg>
+                                             <rdg wit="#C #R">traite</rdg>
+                                          </app>
+                                          <app xml:id="l-47_6" type="morphosyntactic">
+                                             <rdg wit="#A">fu</rdg>
+                                             <rdg wit="#C #R">est</rdg>
+                                          </app>
+                                       </rdg>
+                                    </app>-->
+            <app xml:id="l-47_3" type="morphosyntactic">
+               <rdg wit="#P #B #C #R #S">
+                  <app xml:id="l-47_4" type="graphemic">
+                     <rdg wit="#P #B #C #R">traite</rdg>
+                     <rdg wit="#S">trete</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#A">trez</rdg>
+            </app>
+            <app xml:id="l-47_5" type="absence">
+               <rdg wit="#P #B #S"/>
+               <rdg wit="#A #C #R">
+                  <app xml:id="l-47_6" type="morphosyntactic">
+                     <rdg wit="#A">fu</rdg>
+                     <rdg wit="#C #R">est</rdg>
+                  </app>
+               </rdg>
+            </app>d'un empereor, </l>
+         <l xml:id="l-48" part="N">
+            <app xml:id="l-48_1" type="graphemic">
+               <rdg wit="#P #B #C #R">Poissant</rdg>
+               <rdg wit="#A">puissant</rdg>
+               <rdg wit="#S">puisant</rdg>
+            </app>de <app xml:id="l-48_2" type="graphemic">
+               <rdg wit="#P">riquece</rdg>
+               <rdg wit="#A #S">richesce</rdg>
+               <rdg wit="#B">ricece</rdg>
+               <rdg wit="#C">richece</rdg>
+               <rdg wit="#R">richesse</rdg>
+            </app>et d' <app xml:id="l-48_3" type="graphemic">
+               <rdg wit="#P #B #R #S">onor</rdg>
+               <rdg wit="#A">enor</rdg>
+               <rdg wit="#C">ennor</rdg>
+            </app>, </l>
+         <l xml:id="l-49" part="N">Qui tint <app xml:id="l-49_1" type="graphemic">
+               <rdg wit="#P">Gresse</rdg>
+               <rdg wit="#A #C #R #S">grece</rdg>
+               <rdg wit="#B">gresce</rdg>
+            </app>et Constantinoble. </l>
+         <l xml:id="l-50" part="N">
+            <app xml:id="l-50_1" type="graphemic">
+               <rdg wit="#P">Empeerris</rdg>
+               <rdg wit="#A #R #S">empereriz</rdg>
+               <rdg wit="#B">empereis</rdg>
+               <rdg wit="#C">empererriz</rdg>
+            </app>i <app xml:id="l-50_2" type="graphemic">
+               <rdg wit="#A #B #C #P #S">ot</rdg>
+               <rdg wit="#R">out</rdg>
+            </app>
+            <app xml:id="l-50_3" type="lexsem:strong">
+               <rdg wit="#B #C #R #P #S" varSeq="0" cert="high">molt</rdg>
+               <rdg wit="#A" varSeq="1">cointe et</rdg>
+            </app>noble, </l>
+         <l xml:id="l-51" part="N">Dont l' <app xml:id="l-51_1" type="graphemic">
+               <rdg wit="#A #B #C #P #R">emperere</rdg>
+               <rdg wit="#S">amperere</rdg>
+            </app>ot <app xml:id="l-51_2" type="graphemic">
+               <rdg wit="#P #B #C">.ii.</rdg>
+               <rdg wit="#A #R #S">deus</rdg>
+            </app>
+            <app xml:id="l-51_3" type="graphemic">
+               <rdg wit="#P #B">enfans</rdg>
+               <rdg wit="#A #C #R #S">enfanz</rdg>
+            </app>. </l>
+         <l xml:id="l-52" part="N">
+            <app xml:id="l-52_1" type="graphemic">
+               <rdg wit="#P #B">Mais</rdg>
+               <rdg wit="#A #C #R #S">mes</rdg>
+            </app>
+            <app xml:id="l-52_2" type="graphemic">
+               <rdg wit="#P #B #R">ains</rdg>
+               <rdg wit="#A">ainz</rdg>
+               <rdg wit="#C #S">einz</rdg>
+            </app>fu li premiers si <app xml:id="l-52_3" type="graphemic">
+               <rdg wit="#P #B">grans</rdg>
+               <rdg wit="#A #C #R #S">granz</rdg>
+            </app>
+         </l>
+         <l xml:id="l-53" part="N">Que li autres <app xml:id="l-53_1" type="lexsem:nonsense">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-53_2" type="graphemic">
+                     <rdg wit="#P">naissence</rdg>
+                     <rdg wit="#A #C">nessance</rdg>
+                     <rdg wit="#R">neissance</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">nesauce</rdg>
+               <!-- encore une fois, dois-je le considérer comme étant une var. graphique ? -->
+            </app>
+            <app xml:id="l-53_3" type="graphemic">
+               <rdg wit="#A #B #C #P #R">eüst</rdg>
+               <rdg wit="#S">ust</rdg>
+            </app>, </l>
+         <l xml:id="l-54" part="N">Que li <app xml:id="l-54_1" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #R">premiers</rdg>
+               <rdg wit="#S">primier</rdg>
+            </app>, <app xml:id="l-54_2" type="morphologic">
+               <rdg wit="#P #A #B #S">se</rdg>
+               <rdg wit="#C">s'</rdg>
+               <rdg wit="#R">si</rdg>
+            </app>
+            <app xml:id="l-54_3" type="absence">
+               <rdg wit="#A #B #P #S #R"/>
+               <rdg wit="#C">il</rdg>
+            </app>
+            <app xml:id="l-54_4" type="graphemic">
+               <rdg wit="#A #B #P">lui</rdg>
+               <rdg wit="#C #R #S">li</rdg>
+            </app>pleüst, </l>
+         <l xml:id="l-55" part="N">
+            <app xml:id="l-55_1" type="graphemic">
+               <rdg wit="#P #B">Peüst</rdg>
+               <rdg wit="#A #C #R #S">poist</rdg>
+            </app>
+            <app xml:id="l-55_2" type="morphosyntactic">
+               <rdg wit="#P #A #C">chevaliers</rdg>
+               <rdg wit="#B #R #S">
+                  <app xml:id="l-55_3" type="graphemic">
+                     <rdg wit="#B #S">chevalier</rdg>
+                     <rdg wit="#R">chivalier</rdg>
+                  </app>
+               </rdg>
+            </app>devenir </l>
+         <l xml:id="l-56" part="N">Et tot <app xml:id="l-56_1" type="graphemic">
+               <rdg wit="#A #B #P">l'</rdg>
+               <rdg wit="#C #R #S">le</rdg>
+            </app>
+            <app xml:id="l-56_2" type="lexsem:weak" subtype="assoc">
+               <rdg wit="#A #B #P">empire</rdg>
+               <rdg wit="#C #R #S">
+                  <app xml:id="l-56_3" type="graphemic">
+                     <rdg wit="#C">reaume</rdg>
+                     <rdg wit="#R #S">roiaume</rdg>
+                  </app>
+               </rdg>
+            </app>
+            <app xml:id="l-56_4" type="graphemic">
+               <rdg wit="#A #B #P #R #S">maintenir</rdg>
+               <rdg wit="#C">meintenir</rdg>
+            </app>. </l>
+         <l xml:id="l-57" part="N">Li premiers <app xml:id="l-57_1" type="graphemic">
+               <rdg wit="#A #B #C #P #S">ot</rdg>
+               <rdg wit="#R">ou</rdg>
+            </app>non Alixandres ; </l>
+         <l xml:id="l-58" part="N">
+            <app xml:id="l-58_1" type="graphemic">
+               <rdg wit="#A #B #C #P #S">Alis</rdg>
+               <rdg wit="#R">aliz</rdg>
+            </app>fu <app xml:id="l-58_2" type="graphemic">
+               <rdg wit="#P #B">apeles</rdg>
+               <rdg wit="#A #C #S">apelez</rdg>
+               <rdg wit="#R">apele</rdg>
+            </app>li <app xml:id="l-58_3" type="graphemic">
+               <rdg wit="#A #B #P #S">mandres</rdg>
+               <rdg wit="#C">mendres</rdg>
+               <rdg wit="#R">maindres</rdg>
+            </app>. </l>
+         <l xml:id="l-59" part="N">
+            <app xml:id="l-59_1" type="morphosyntactic">
+               <rdg wit="#P #A">Alixandres</rdg>
+               <rdg wit="#B #C #R #S">alixandre</rdg>
+            </app>ot non li <app xml:id="l-59_2" type="morphosyntactic">
+               <rdg wit="#A #B #P #R #S">pere</rdg>
+               <rdg wit="#C">peres</rdg>
+            </app>
+         </l>
+         <l xml:id="l-60" part="N">
+            <app xml:id="l-60_1" type="absence">
+               <rdg wit="#A #B #C #P #R">Et</rdg>
+               <rdg wit="#S"/>
+            </app>
+            <!-- JBC: check nonsense type -->
+            <app xml:id="l-60_2" type="lexsem:nonsense">
+               <rdg wit="#A #B #C #R #M #P">
+                  <app xml:id="l-60_3" type="graphemic">
+                     <rdg wit="#P">Tentalis</rdg>
+                     <rdg wit="#A #B #C">tantalis</rdg>
+                     <rdg wit="#R">tantaliz</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">encantalis</rdg>
+               <!-- comment traiter les noms propres ? Encore une fois, c'est S qui pose des problèmes -->
+            </app>ot non <app xml:id="l-60_4" type="graphemic">
+               <rdg wit="#A #C #P #R #S">la</rdg>
+               <rdg wit="#B">li</rdg>
+            </app>mere. </l>
+         <l xml:id="l-61" part="N">De l' <app xml:id="l-61_1" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #S">
+                  <app xml:id="l-61_2" type="graphemic">
+                     <rdg wit="#P">empeerris</rdg>
+                     <rdg wit="#A #C">empereriz</rdg>
+                     <rdg wit="#B">empereis</rdg>
+                     <rdg wit="#S">empereris</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#R">empereor</rdg>
+            </app>
+            <app xml:id="l-61_3" type="lexsem:strong">
+               <rdg wit="#P #A #B #C" varSeq="0" cert="high">
+                  <app xml:id="l-61_4" type="graphemic">
+                     <rdg wit="#P">Tentalis</rdg>
+                     <rdg wit="#A #B #C">tantalis</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" varSeq="1" cert="high">cantal</rdg>
+               <rdg wit="#R" varSeq="2">et d'aliz</rdg>
+            </app>
+         </l>
+         <l xml:id="l-62" part="N">
+            <app xml:id="l-62_1" type="absence">
+               <rdg wit="#A #C #P #R"/>
+               <rdg wit="#B #S">et</rdg>
+            </app>De l' <app xml:id="l-62_2" type="morphosyntactic">
+               <rdg wit="#A #B #C #P #S">
+                  <app xml:id="l-62_3" type="graphemic">
+                     <rdg wit="#C #P #S">empereor</rdg>
+                     <rdg wit="#A">enpereor</rdg>
+                     <rdg wit="#B">emperor</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#R">empereriz</rdg>
+            </app>
+            <!-- JBC: vérifier ce type -->
+            <app xml:id="l-62_4" type="lexsem:nonsense">
+               <rdg wit="#P #A #B #C">et d'alis</rdg>
+               <rdg wit="#R">tantaliz</rdg>
+               <rdg wit="#S">das</rdg>
+            </app>
+         </l>
+         <l xml:id="l-63" part="N">La parole <app xml:id="l-63_1" type="lexsem:weak"
+               subtype="grammeme">
+               <rdg wit="#P #A #B">atant</rdg>
+               <rdg wit="#C #R #S">vos</rdg>
+            </app>
+            <app xml:id="l-63_2" type="lexsem:weak" subtype="assoc">
+               <rdg wit="#P #B #A #C #R">
+                  <app xml:id="l-63_3" type="graphemic">
+                     <rdg wit="#P #B">laisserai</rdg>
+                     <rdg wit="#A">lesseron</rdg>
+                     <rdg wit="#C">lesserai</rdg>
+                     <rdg wit="#R">lasserai</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">finerai</rdg>
+            </app>. </l>
+         <l xml:id="l-64" part="N">
+            <app xml:id="l-64_1" type="lexsem:strong">
+               <rdg wit="#A #B #C #P #S" varSeq="0" cert="high">D' <app xml:id="l-64_2"
+                     type="morphosyntactic">
+                     <rdg wit="#A #B #P #R">
+                        <app xml:id="l-64_3" type="graphemic">
+                           <rdg wit="#A #B #P">Alixandre</rdg>
+                           <rdg wit="#R">alisandre</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#S">alixandres</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#R" varSeq="1">et apres</rdg>
+            </app>vos <app xml:id="l-64_4" type="lexsem:weak" subtype="assoc">
+               <rdg wit="#P #C #R #S">parlerai</rdg>
+               <rdg wit="#B #A">
+                  <app xml:id="l-64_5" type="morphosyntactic">
+                     <rdg wit="#B">conterai</rdg>
+                     <rdg wit="#A">conteron</rdg>
+                  </app>
+               </rdg>
+            </app>
+         </l>
+         <l xml:id="l-65" part="N">Qui tant fu <app xml:id="l-65_1" type="lexsem:strong">
+               <rdg wit="#A #C #B #R #S" varSeq="0" cert="high">
+                  <app xml:id="l-65_2" type="graphemic">
+                     <rdg wit="#A #C">corageus</rdg>
+                     <rdg wit="#B">corajos</rdg>
+                     <rdg wit="#R">corrageus</rdg>
+                     <rdg wit="#S">corajeus</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#P" varSeq="1">orgilleus</rdg>
+            </app>et fiers </l>
+         <l xml:id="l-66" part="N">
+            <app xml:id="l-66_1" type="morphologic">
+               <rdg wit="#P #A #C #S">Que il</rdg>
+               <rdg wit="#B #R">qu'il</rdg>
+            </app>ne <app xml:id="l-66_2" type="graphemic">
+               <rdg wit="#P #B #S">daigna</rdg>
+               <rdg wit="#A #C #R">deigna</rdg>
+            </app>
+            <app xml:id="l-66_3" type="graphemic">
+               <rdg wit="#P #A #B #C #S">chevaliers</rdg>
+               <rdg wit="#R">chivaliers</rdg>
+            </app>
+         </l>
+         <l xml:id="l-67" part="N">Devenir <app xml:id="l-67_1" type="graphemic">
+               <rdg wit="#P #B #C #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>
+            <app xml:id="l-67_2" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#P #A #B #C #R">sa</rdg>
+               <rdg wit="#S">la</rdg>
+            </app>region. </l>
+         <l xml:id="l-68" part="N">
+            <app xml:id="l-68_1" type="absence">
+               <rdg wit="#P #A #B #R #C">
+                  <app xml:id="l-68_2" type="lexsem:strong">
+                     <rdg wit="#P #A #B #R" xml:id="l-68_t-1" varSeq="0" cert="high">Oi</rdg>
+                     <rdg wit="#C" varSeq="1">or</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S"/>
+            </app>
+            <app xml:id="l-68_3" type="absence">
+               <rdg wit="#P #A #B #R #S"/>
+               <rdg wit="#C">revueil</rdg>
+            </app>
+            <app xml:id="l-68_4" type="absence">
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S" corresp="#l-68_t-1">oye</rdg>
+            </app>
+            <app xml:id="l-68_5" type="absence">
+               <rdg wit="#P #A #B #R">ot</rdg>
+               <rdg wit="#S #C"/>
+            </app>
+            <!-- JBC: not sure of the type, could be graphemic -->
+            <app xml:id="l-68_6" type="lexsem:nonsense">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-68_7" type="graphemic">
+                     <rdg wit="#P #B #R">faire</rdg>
+                     <rdg wit="#A">feire</rdg>
+                     <rdg wit="#C">fere</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">fiere</rdg>
+            </app>
+            <app xml:id="l-68_8" type="graphemic">
+               <rdg wit="#P #C #S">mention</rdg>
+               <rdg wit="#A">menssion</rdg>
+               <rdg wit="#B">mension</rdg>
+               <rdg wit="#R">mencion</rdg>
+            </app>
+         </l>
+         <l xml:id="l-69" part="N">
+            <app xml:id="l-69_1" type="graphemic">
+               <rdg wit="#P #A #B #R">Del</rdg>
+               <rdg wit="#C #S">dou</rdg>
+            </app>roi <app xml:id="l-69_2" type="graphemic">
+               <rdg wit="#P #B #C">Artu</rdg>
+               <rdg wit="#A #R">artus</rdg>
+               <rdg wit="#S">artruc</rdg>
+            </app>, qui <app xml:id="l-69_3" type="graphemic">
+               <rdg wit="#P #A #B #C #R">lors</rdg>
+               <rdg wit="#S">lor</rdg>
+            </app>
+            <app xml:id="l-69_4" type="lexsem:strong">
+               <rdg wit="#A #P #B #C #R" varSeq="0" cert="high">
+                  <app xml:id="l-69_5" type="graphemic">
+                     <rdg wit="#P #B #C #R">regnoit</rdg>
+                     <rdg wit="#A">reignoit</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" varSeq="1">vivoit</rdg>
+            </app>, </l>
+         <l xml:id="l-70" part="N">
+            <app xml:id="l-70_1" type="graphemic">
+               <rdg wit="#P #A #B #C #R">Et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>des <app xml:id="l-70_2" type="morphosyntactic">
+               <rdg wit="#P #A #B #C #S">barons</rdg>
+               <rdg wit="#R">baront</rdg>
+            </app>
+            <app xml:id="l-70_3" type="morphologic">
+               <rdg wit="#P #A #C #S">que il</rdg>
+               <rdg wit="#B #R">qu'il</rdg>
+            </app>tenoit </l>
+         <l xml:id="l-71" part="N">
+            <app xml:id="l-71_1" type="graphemic">
+               <rdg wit="#P #B #C #R #S">En</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>sa <app xml:id="l-71_2" type="graphemic">
+               <rdg wit="#P">compagnie</rdg>
+               <rdg wit="#A #R #S">compaignie</rdg>
+               <rdg wit="#B">conpagnie</rdg>
+               <rdg wit="#C">compeignie</rdg>
+            </app>
+            <app xml:id="l-71_3" type="graphemic">
+               <rdg wit="#P #B">tos</rdg>
+               <rdg wit="#A #R #S">toz</rdg>
+               <rdg wit="#C">tous</rdg>
+            </app>
+            <app xml:id="l-71_4" type="graphemic">
+               <rdg wit="#P #B">jors</rdg>
+               <rdg wit="#A #C #R #S">jorz</rdg>
+            </app>, </l>
+         <l xml:id="l-72" part="N">
+            <app xml:id="l-72_1" type="graphemic">
+               <rdg wit="#A #C #P #R #S">Par</rdg>
+               <rdg wit="#B">per</rdg>
+            </app>
+            <app xml:id="l-72_2" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#P #A #B">
+                  <app xml:id="l-72_3" type="graphemic">
+                     <rdg wit="#P">k'</rdg>
+                     <rdg wit="#A #B">qu'</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#C #R #S">
+                  <app xml:id="l-72_4" type="graphemic">
+                     <rdg wit="#C #R">quoi</rdg>
+                     <rdg wit="#S">quo</rdg>
+                  </app>
+               </rdg>
+            </app>
+            <app xml:id="l-72_5" type="absence">
+               <rdg wit="#A #B #P #R #S">
+                  <app xml:id="l-72_6" type="morphosyntactic">
+                     <rdg wit="#A #B #P #R" xml:id="l-72_t-3">estoit</rdg>
+                     <rdg wit="#S">ert</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#C"/>
+            </app>
+            <app xml:id="l-72_7" type="lexsem:strong">
+               <rdg wit="#A #B #C #P #R" varSeq="0" cert="high">
+                  <app xml:id="l-72_8" type="graphemic">
+                     <rdg wit="#P #C">doutee</rdg>
+                     <rdg wit="#A #B">dotee</rdg>
+                     <rdg wit="#R">dutee</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" varSeq="1">renome</rdg>
+            </app>
+            <app xml:id="l-72_9" type="absence">
+               <rdg wit="#A #B #P #S #R"/>
+               <rdg wit="#C" corresp="#l-72_t-3">estoit</rdg>
+            </app>sa <app xml:id="l-72_10" type="lexsem:strong">
+               <rdg wit="#P #B #A #C #R" varSeq="0" cert="high">
+                  <app xml:id="l-72_11" type="graphemic">
+                     <rdg wit="#P #B">cors</rdg>
+                     <rdg wit="#A #C #R">corz</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" varSeq="1">torz</rdg>
+            </app>
+         </l>
+         <l xml:id="l-73" part="N">
+            <app xml:id="l-73_1" type="lexsem:nonsense">
+               <rdg wit="#A #B #C #P #R">Et renomee</rdg>
+               <rdg wit="#S" cause="segmentation">ererome</rdg>
+            </app>
+            <app xml:id="l-73_2" type="lexsem:nonsense">
+               <rdg wit="#A #B #C #P #R">par le monde</rdg>
+               <rdg wit="#S" cause="segmentation">pleinode</rdg>
+            </app>. </l>
+         <l xml:id="l-74" part="N">
+            <app xml:id="l-74_1" type="graphemic">
+               <rdg wit="#P #B #C #S">Comment</rdg>
+               <rdg wit="#A">comant</rdg>
+               <rdg wit="#R">coment</rdg>
+            </app>
+            <app xml:id="l-74_2" type="lexsem:strong">
+               <rdg wit="#P #A #B #C #R" varSeq="0" cert="high">que la fin</rdg>
+               <rdg wit="#S" cause="paleo" varSeq="1">quel ains</rdg>
+            </app>
+            <app xml:id="l-74_3" type="morphosyntactic">
+               <rdg wit="#P #C #R #S">li</rdg>
+               <rdg wit="#A">l'an</rdg>
+               <rdg wit="#B">i</rdg>
+            </app>responde </l>
+         <l xml:id="l-75" part="N">Et <app xml:id="l-75_1" type="graphemic">
+               <rdg wit="#P #C">comment</rdg>
+               <rdg wit="#A #B">comant</rdg>
+               <rdg wit="#R #S">coment</rdg>
+            </app>
+            <app xml:id="l-75_2" type="morphologic">
+               <rdg wit="#P #A #C #R">que</rdg>
+               <rdg wit="#S #B">qu'</rdg>
+            </app>
+            <app xml:id="l-75_3" type="absence">
+               <rdg wit="#P #C #R"/>
+               <rdg wit="#S #B #A">
+                  <app xml:id="l-75_4" type="absence">
+                     <rdg wit="#A">
+                        <space/>
+                     </rdg>
+                     <rdg wit="#B #S"/>
+                  </app>il </rdg>
+            </app>
+            <app xml:id="l-75_5" type="absence">
+               <rdg wit="#P #C #R #A #S">
+                  <app xml:id="l-75_6" type="morphosyntactic">
+                     <rdg wit="#P #C">lui</rdg>
+                     <rdg wit="#R">li</rdg>
+                     <rdg wit="#A #S">l'</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#B"/>
+            </app>en <app xml:id="l-75_7" type="graphemic">
+               <rdg wit="#P #B">aviegne</rdg>
+               <rdg wit="#A">aveingne</rdg>
+               <rdg wit="#C">avieigne</rdg>
+               <rdg wit="#R">aveigne</rdg>
+               <rdg wit="#S">avigne</rdg>
+            </app>
+         </l>
+         <l xml:id="l-76" part="N">N'est <app xml:id="l-76_1" type="graphemic">
+               <rdg wit="#P #B #R">rien</rdg>
+               <rdg wit="#A #C #S">riens</rdg>
+            </app>
+            <!-- JBC: je dirais fort (ou nonsense) mais pas faible? -->
+            <app xml:id="l-76_2" type="absence">
+               <rdg wit="#P #B #C #S #A">
+                  <app xml:id="l-76_3" type="lexsem:strong">
+                     <rdg wit="#P #B #C #S" varSeq="0" cert="high">
+                        <app xml:id="l-76_4" type="graphemic">
+                           <rdg wit="#P #B #C">nule</rdg>
+                           <rdg wit="#S">nulle</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#A" varSeq="1">nee</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#R"/>
+            </app>qui <app xml:id="l-76_5" type="morphosyntactic">
+               <rdg wit="#P #B #A #C #R">
+                  <app xml:id="l-76_6" type="morphosyntactic">
+                     <rdg wit="#P #A #B #C">
+                        <app xml:id="l-76_7" type="morphologic">
+                           <rdg wit="#P">l'</rdg>
+                           <rdg wit="#A #B #C">le</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#R">li</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">les</rdg>
+            </app>
+            <app xml:id="l-76_8" type="absence">
+               <rdg wit="#P">en</rdg>
+               <rdg wit="#A #B #C #R #S"/>
+            </app>
+            <app xml:id="l-76_9" type="lexsem:weak" subtype="lexmorph">
+               <rdg wit="#P #B #R #C">
+                  <app xml:id="l-76_10" type="graphemic">
+                     <rdg wit="#P #B #R">retiegne</rdg>
+                     <rdg wit="#C">retieigne</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S #A">
+                  <app xml:id="l-76_11" type="graphemic">
+                     <rdg wit="#A">deteingne</rdg>
+                     <rdg wit="#S">desteigne</rdg>
+                  </app>
+               </rdg>
+            </app>
+         </l>
+         <l xml:id="l-77" part="N">
+            <app xml:id="l-77_1" type="lexsem:strong">
+               <rdg wit="#B #C #R #P #S" xml:id="l-77_t-1" varSeq="0" cert="high">
+                  <app xml:id="l-77_2" type="morphologic">
+                     <rdg wit="#P #C">
+                        <app xml:id="l-77_3" type="graphemic">
+                           <rdg wit="#P">K'</rdg>
+                           <rdg wit="#C">qu'</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#B #R #S #A">
+                        <app xml:id="l-77_4" type="absence">
+                           <rdg wit="#B #R #S">que</rdg>
+                           <!-- JBC: I'm not sure why A is here? -->
+                           <rdg wit="#A"/>
+                        </app>
+                     </rdg>
+                  </app>
+                  <app xml:id="l-77_5" type="order">
+                     <rdg wit="#C #P #R #S" xml:id="l-77_t-2">aler</rdg>
+                     <rdg wit="#A #B"/>
+                  </app>
+               </rdg>
+               <rdg wit="#A" varSeq="1">el mont</rdg>
+            </app>
+            <app xml:id="l-77_6" type="absence">
+               <rdg wit="#A #C #P #R #S"/>
+               <rdg wit="#B">il</rdg>
+            </app>
+            <app xml:id="l-77_7" type="order">
+               <rdg wit="#B #C #P #R #S"/>
+               <rdg wit="#A" corresp="#l-77_t-1">que</rdg>
+            </app>
+            <app xml:id="l-77_8" type="morphologic">
+               <rdg wit="#P #B #C #R #S">ne</rdg>
+               <rdg wit="#A">n'</rdg>
+            </app>
+            <app xml:id="l-77_9" type="absence">
+               <rdg wit="#B #C #P #S">s'</rdg>
+               <rdg wit="#A #R"/>
+            </app>
+            <app xml:id="l-77_10" type="absence">
+               <rdg wit="#B #C #P #S #A">
+                  <app xml:id="l-77_11" type="graphemic">
+                     <rdg wit="#B #C #P #S">en</rdg>
+                     <rdg wit="#A">an</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#R"/>
+            </app>
+            <app xml:id="l-77_12" type="lexsem:strong">
+               <rdg wit="#A #P #C #R #S" varSeq="0" cert="high">
+                  <app xml:id="l-77_14" type="morphologic">
+                     <rdg wit="#P #C #R #S">
+                        <app xml:id="l-77_13" type="graphemic">
+                           <rdg wit="#P">voelle</rdg>
+                           <rdg wit="#C">vueille</rdg>
+                           <rdg wit="#R #S">voille</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#A" corresp="#l-77_t-2">voist</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#B" varSeq="1" corresp="#l-77_t-2">alt</rdg>
+            </app>
+            <app xml:id="l-77_15" type="graphemic">
+               <rdg wit="#P #B #C #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>
+            <app xml:id="l-77_16" type="graphemic">
+               <rdg wit="#P #R #S">Bretaigne</rdg>
+               <rdg wit="#A">breteingne</rdg>
+               <rdg wit="#B">bretagne</rdg>
+               <rdg wit="#C">breteigne</rdg>
+            </app>. </l>
+         <l xml:id="l-78" part="N">
+            <app xml:id="l-78_1" type="graphemic">
+               <rdg wit="#P #B #R">Mais</rdg>
+               <rdg wit="#A #C #S">mes</rdg>
+            </app>
+            <app xml:id="l-78_2" type="graphemic">
+               <rdg wit="#P #B">ains</rdg>
+               <rdg wit="#A #R">ainz</rdg>
+               <rdg wit="#C #S">einz</rdg>
+            </app>
+            <app xml:id="l-78_3" type="lexsem:strong">
+               <rdg wit="#A #C #R #S #P" varSeq="0" cert="high">est <app xml:id="l-78_4"
+                     type="graphemic">
+                     <rdg wit="#P">drois</rdg>
+                     <rdg wit="#A #C #R #S">droiz</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#B" varSeq="1">convient</rdg>
+            </app>que congié <app xml:id="l-78_5" type="graphemic">
+               <rdg wit="#P">praigne</rdg>
+               <rdg wit="#A">preingne</rdg>
+               <rdg wit="#B">pragne</rdg>
+               <rdg wit="#C #R #S">preigne</rdg>
+            </app>
+         </l>
+         <l xml:id="l-79" part="N">A son <app xml:id="l-79_1" type="graphemic">
+               <rdg wit="#P #A #B #C #S">pere</rdg>
+               <rdg wit="#R">pierre</rdg>
+            </app>
+            <app xml:id="l-79_2" type="morphologic">
+               <rdg wit="#P #A #C #S">que</rdg>
+               <rdg wit="#B #R">qu'</rdg>
+            </app>il s' <app xml:id="l-79_3" type="graphemic">
+               <rdg wit="#B #C #P #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>
+            <app xml:id="l-79_4" type="lexsem:strong">
+               <rdg wit="#P #A #B #C #R" varSeq="0" cert="high">aille</rdg>
+               <rdg wit="#S" cause="paleo" varSeq="1">able</rdg>
+            </app>
+         </l>
+         <l xml:id="l-80" part="N">
+            <app xml:id="l-80_1" type="graphemic">
+               <rdg wit="#P #B #C #R">En</rdg>
+               <rdg wit="#A #S">an</rdg>
+            </app>
+            <app xml:id="l-80_2" type="graphemic">
+               <rdg wit="#P #B #R #S #A">Bretaigne</rdg>
+               <rdg wit="#C">breteigne</rdg>
+            </app>
+            <app xml:id="l-80_3" type="morphologic">
+               <rdg wit="#P #A #C #R #B">
+                  <app xml:id="l-80_4" type="lexsem:weak" subtype="grammeme">
+                     <rdg wit="#P #A #C #R">n'</rdg>
+                     <rdg wit="#B" cause="paleo">u</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">ne</rdg>
+            </app>
+            <app xml:id="l-80_5" type="graphemic">
+               <rdg wit="#P #B #C #R #S">en</rdg>
+               <rdg wit="#A">an</rdg>
+            </app>
+            <app xml:id="l-80_6" type="graphemic">
+               <rdg wit="#P #B #R">Cornuaille</rdg>
+               <rdg wit="#A #S">cornoaille</rdg>
+               <rdg wit="#C">cornoualle</rdg>
+            </app>. </l>
+         <l xml:id="l-81" part="N">Por congié <app xml:id="l-81_1" type="graphemic">
+               <rdg wit="#P #B #C #R #S">prendre</rdg>
+               <rdg wit="#A">prandre</rdg>
+            </app>et demander </l>
+         <l xml:id="l-82" part="N">
+            <app xml:id="l-82_1" type="morphologic">
+               <rdg wit="#P #R">Vait</rdg>
+               <rdg wit="#A #B #S">va</rdg>
+               <rdg wit="#C">vet</rdg>
+            </app>a l'empereor <app xml:id="l-82_2" type="morphologic">
+               <!-- je type, car la variante fausse le vers -->
+               <rdg wit="#P #A #B #C #R">parler</rdg>
+               <rdg wit="#S">parlar</rdg>
+            </app>
+         </l>
+         <l xml:id="l-83" part="N">
+            <app xml:id="l-83_1" type="morphosyntactic">
+               <rdg wit="#P #B #R">Alixandres</rdg>
+               <rdg wit="#A #C #S">alixandre</rdg>
+            </app>, li <app xml:id="l-83_2" type="graphemic">
+               <rdg wit="#P #C #R">biaus</rdg>
+               <rdg wit="#A #B">biax</rdg>
+               <rdg wit="#S">beauz</rdg>
+            </app>li <app xml:id="l-83_3" type="graphemic">
+               <rdg wit="#P #B">prous</rdg>
+               <rdg wit="#A #C">preuz</rdg>
+               <rdg wit="#R">proz</rdg>
+               <rdg wit="#S">prouz</rdg>
+            </app>: </l>
+         <l xml:id="l-84" part="N">
+            <app xml:id="l-84_1" type="morphosyntactic">
+               <rdg wit="#P #A #B #C #S">Ja</rdg>
+               <rdg wit="#R">si</rdg>
+            </app>li <app xml:id="l-84_2" type="graphemic">
+               <rdg wit="#P #A #B #C #S">dira</rdg>
+               <rdg wit="#R">dirra</rdg>
+            </app>
+            <app xml:id="l-84_3" type="morphosyntactic">
+               <rdg wit="#P #B #R">quels</rdg>
+               <rdg wit="#A #C">quex</rdg>
+               <rdg wit="#S">qu'il</rdg>
+            </app>
+            <app xml:id="l-84_4" type="graphemic">
+               <rdg wit="#P #A #B #C #R">est</rdg>
+               <rdg wit="#S">es</rdg>
+            </app>
+            <app xml:id="l-84_5" type="morphosyntactic">
+               <rdg wit="#P #A #C #R">ses</rdg>
+               <rdg wit="#B">sos</rdg>
+               <rdg wit="#S">si</rdg>
+            </app>
+            <app xml:id="l-84_6" type="lexsem:strong">
+               <rdg wit="#P #B #A #C #R" varSeq="0" cert="high">
+                  <app xml:id="l-84_7" type="graphemic">
+                     <rdg wit="#P #B">vous</rdg>
+                     <rdg wit="#A #C">veuz</rdg>
+                     <rdg wit="#R">voz</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" cause="paleo" varSeq="1">vieuz</rdg>
+            </app>
+         </l>
+         <l xml:id="l-85" part="N">
+            <app xml:id="l-85_1" type="morphosyntactic">
+               <rdg wit="#P">Ne</rdg>
+               <rdg wit="#A #B #C #R #S">et</rdg>
+            </app>
+            <app xml:id="l-85_2" type="morphologic">
+               <rdg wit="#P #A #B #C #S">que</rdg>
+               <rdg wit="#R">qu'</rdg>
+            </app>
+            <app xml:id="l-85_3" type="morphosyntactic">
+               <rdg wit="#P #A #B #C #R">il</rdg>
+               <rdg wit="#S">li</rdg>
+            </app>
+            <!-- JBC: not merely graphemic? -->
+            <app xml:id="l-85_4" type="graphemic">
+               <rdg wit="#B #P #R #A #C">
+                  <app xml:id="l-85_5" type="graphemic">
+                     <rdg wit="#P #B #R">veut</rdg>
+                     <rdg wit="#A">vialt</rdg>
+                     <rdg wit="#C">velt</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">vet</rdg>
+            </app>
+            <app xml:id="l-85_6" type="graphemic">
+               <rdg wit="#P #B #R">faire</rdg>
+               <rdg wit="#A">feire</rdg>
+               <rdg wit="#C #S">fere</rdg>
+            </app>
+            <app xml:id="l-85_7" type="lexsem:strong">
+               <rdg wit="#A #B #C #R #P" varSeq="0" cert="high">et <app xml:id="l-85_8"
+                     type="graphemic">
+                     <rdg wit="#P #B #R">emprendre</rdg>
+                     <rdg wit="#A">anprandre</rdg>
+                     <rdg wit="#C">enprendre</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" cause="paleo" varSeq="1">canpandre</rdg>
+            </app>. </l>
+         <l xml:id="l-86" part="N">
+            <app xml:id="l-86_1" type="morphosyntactic">
+               <rdg wit="#P #C #R">Biaus</rdg>
+               <rdg wit="#A #S">biau</rdg>
+               <rdg wit="#B">biax</rdg>
+            </app>pere, por <app xml:id="l-86_2" type="graphemic">
+               <rdg wit="#P #B #R">honor</rdg>
+               <rdg wit="#A">enor</rdg>
+               <rdg wit="#C">ennor</rdg>
+               <rdg wit="#S">onor</rdg>
+            </app>
+            <app xml:id="l-86_3" type="graphemic">
+               <rdg wit="#P #B #C #R">aprendre</rdg>
+               <rdg wit="#A">aprandre</rdg>
+               <rdg wit="#S">apandre</rdg>
+            </app>
+         </l>
+         <l xml:id="l-87" part="N">
+            <app xml:id="l-87_1" type="graphemic">
+               <rdg wit="#P #A #B #C #R">Et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>por conquerre <app xml:id="l-87_2" type="absence">
+               <rdg wit="#P">et</rdg>
+               <rdg wit="#A #B #C #R #S"/>
+            </app>pris <app xml:id="l-87_3" type="graphemic">
+               <rdg wit="#P #A #B #C #R">et</rdg>
+               <rdg wit="#S">e</rdg>
+            </app>los, </l>
+         <l xml:id="l-88" part="N">.i. don, <app xml:id="l-88_1" type="graphemic">
+               <rdg wit="#P #B #C #R #S">fait</rdg>
+               <rdg wit="#A">fet</rdg>
+            </app>il, <app xml:id="l-88_2" type="graphemic">
+               <rdg wit="#P #A #C #R #S">querre</rdg>
+               <rdg wit="#B">quere</rdg>
+            </app>vos os, </l>
+         <l xml:id="l-89" part="N">Que <app xml:id="l-89_1" type="graphemic">
+               <rdg wit="#P #A #C #R #S">je</rdg>
+               <rdg wit="#B">jo</rdg>
+            </app>
+            <app xml:id="l-89_2" type="graphemic">
+               <rdg wit="#P">voel</rdg>
+               <rdg wit="#A">vuel</rdg>
+               <rdg wit="#B #R #S">voil</rdg>
+               <rdg wit="#C">vueil</rdg>
+            </app>que vos me <app xml:id="l-89_3" type="graphemic">
+               <rdg wit="#P #B">doignies</rdg>
+               <rdg wit="#A">doingniez</rdg>
+               <rdg wit="#C #R">doigniez</rdg>
+               <rdg wit="#S">doignez</rdg>
+            </app>: </l>
+         <l xml:id="l-90" part="N">Ne <app xml:id="l-90_1" type="absence">
+               <rdg wit="#P #A #C #R #S"/>
+               <rdg wit="#B">que</rdg>
+            </app>ja <app xml:id="l-90_2" type="morphologic">
+               <rdg wit="#P #A #C #R #S">ne le</rdg>
+               <rdg wit="#B">nel</rdg>
+            </app>
+            <app xml:id="l-90_3" type="morphologic">
+               <rdg wit="#P #A #C #B #S">me</rdg>
+               <rdg wit="#R">m'</rdg>
+            </app>
+            <app xml:id="l-90_4" type="absence">
+               <rdg wit="#P #A #C #B #S"/>
+               <rdg wit="#R">en</rdg>
+            </app>
+            <app xml:id="l-90_5" type="graphemic">
+               <rdg wit="#P">porloignies</rdg>
+               <rdg wit="#A #S">porloigniez</rdg>
+               <rdg wit="#B">porlognies</rdg>
+               <rdg wit="#C">pouloingnie</rdg>
+               <rdg wit="#R">porloignez</rdg>
+            </app>, </l>
+         <l xml:id="l-91" part="N">Se <app xml:id="l-91_1" type="graphemic">
+               <rdg wit="#P">otriier</rdg>
+               <rdg wit="#A #B #C #R #S">otroier</rdg>
+            </app>le me <app xml:id="l-91_2" type="graphemic">
+               <rdg wit="#P #B">deves</rdg>
+               <rdg wit="#A #C #R #S">devez</rdg>
+            </app>. </l>
+         <l xml:id="l-92" part="N">
+            <app xml:id="l-92_1" type="morphosyntactic">
+               <rdg wit="#P #A #B #C #R">De <app xml:id="l-92_2" type="graphemic">
+                     <rdg wit="#P">cou</rdg>
+                     <rdg wit="#A #B #C #R">ce</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">e</rdg>
+            </app>
+            <app xml:id="l-92_3" type="morphologic">
+               <rdg wit="#P #A #B #C #R">ne</rdg>
+               <rdg wit="#S">n'</rdg>
+            </app>
+            <app xml:id="l-92_4" type="absence">
+               <rdg wit="#P #A #B #C #R"/>
+               <rdg wit="#S">en</rdg>
+            </app>
+            <app xml:id="l-92_5" type="morphosyntactic">
+               <rdg wit="#P #A #C #B">
+                  <app xml:id="l-92_6" type="graphemic">
+                     <rdg wit="#P #A #C">cuide</rdg>
+                     <rdg wit="#B">quide</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#R #S">
+                  <app xml:id="l-92_7" type="graphemic">
+                     <rdg wit="#R">quidez</rdg>
+                     <rdg wit="#S">cuidiez</rdg>
+                  </app>
+               </rdg>
+            </app>estre <app xml:id="l-92_8" type="lexsem:strong">
+               <rdg wit="#A #C #R #P #B" varSeq="0" cert="high">
+                  <app xml:id="l-92_9" type="graphemic">
+                     <rdg wit="#P">greves</rdg>
+                     <rdg wit="#A #C #R #B">grevez</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S" varSeq="1">crevez</rdg>
+            </app>
+         </l>
+         <l xml:id="l-93" part="N">L' <app xml:id="l-93_1" type="morphosyntactic">
+               <rdg wit="#A #C #P #R">empereres</rdg>
+               <rdg wit="#B #S">
+                  <app xml:id="l-93_2" type="graphemic">
+                     <rdg wit="#B">emperere</rdg>
+                     <rdg wit="#S">anperere</rdg>
+                  </app>
+               </rdg>
+            </app>, ne <app xml:id="l-93_3" type="graphemic">
+               <rdg wit="#P">peu</rdg>
+               <rdg wit="#A">po</rdg>
+               <rdg wit="#B #C #R #S">poi</rdg>
+            </app>ne bien : </l>
+         <l xml:id="l-94" part="N">L' <app xml:id="l-94_1" type="graphemic">
+               <rdg wit="#B #P #R">onor</rdg>
+               <rdg wit="#A">enor</rdg>
+               <rdg wit="#C">ennor</rdg>
+               <rdg wit="#S">anor</rdg>
+            </app>son fil <app xml:id="l-94_2" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#P #A #B #C #R">sor</rdg>
+               <rdg wit="#S">sus</rdg>
+            </app>
+            <app xml:id="l-94_3" type="graphemic">
+               <rdg wit="#P #A #B #R #S">tote</rdg>
+               <rdg wit="#C">toute</rdg>
+            </app>rien </l>
+         <l xml:id="l-95" part="N">
+            <app xml:id="l-95_1" type="lexsem:strong">
+               <rdg wit="#P #A #C #R" varSeq="0" cert="high">Doit</rdg>
+               <rdg wit="#B" varSeq="1" cert="high">velt</rdg>
+               <rdg wit="#S" varSeq="2">voit</rdg>
+            </app>il <app xml:id="l-95_2" type="lexsem:strong">
+               <rdg wit="#P #A #C #S #R" varSeq="0" cert="high">
+                  <app xml:id="l-95_3" type="graphemic">
+                     <rdg wit="#P #A #C #S">voloir</rdg>
+                     <rdg wit="#R">voler</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#B" varSeq="1">amer</rdg>
+            </app>et <app xml:id="l-95_4" type="graphemic">
+               <rdg wit="#P #A #C #S">covoitier</rdg>
+               <rdg wit="#B">covoutier</rdg>
+               <rdg wit="#R">covoiter</rdg>
+            </app>. </l>
+         <l xml:id="l-96" part="N">Molt <app xml:id="l-96_1" type="graphemic">
+               <rdg wit="#P #A #C #S">cuideroit</rdg>
+               <rdg wit="#B #R">quideroit</rdg>
+            </app>bien <app xml:id="l-96_2" type="graphemic">
+               <rdg wit="#P #A #B #C #S">esploitier</rdg>
+               <rdg wit="#R">esploiter</rdg>
+            </app>; </l>
+         <l xml:id="l-97" part="N">
+            <app xml:id="l-97_1" type="absence">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-97_2" type="graphemic">
+                     <rdg wit="#P #A #C">Cuideroit</rdg>
+                     <rdg wit="#B #R">quideroit</rdg>
+                  </app>? <app xml:id="l-97_3" type="lexsem:weak" subtype="grammeme">
+                     <rdg wit="#P #A #C">Et</rdg>
+                     <rdg wit="#B">voir</rdg>
+                     <rdg wit="#R">ne</rdg>
+                  </app>si feroit il, </rdg>
+               <rdg wit="#S"/>
+            </app>
+         </l>
+         <l xml:id="l-98" part="N">S'il <app xml:id="l-98_1" type="graphemic">
+               <rdg wit="#P #A #B">acroissoit</rdg>
+               <rdg wit="#C">acreissoit</rdg>
+               <rdg wit="#R">acressoit</rdg>
+               <rdg wit="#S">acroisoit</rdg>
+            </app>l' <app xml:id="l-98_2" type="graphemic">
+               <rdg wit="#P #B #R #S">onor</rdg>
+               <rdg wit="#A">enor</rdg>
+               <rdg wit="#C">ennor</rdg>
+            </app>son fil. </l>
+         <l xml:id="l-99" part="N">
+            <app xml:id="l-99_1" type="absence">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-99_2" type="morphosyntactic">
+                     <rdg wit="#C #P #A #B">
+                        <app xml:id="l-99_3" type="graphemic">
+                           <rdg wit="#C #P">Biaus</rdg>
+                           <rdg wit="#A #B">Biax</rdg>
+                        </app>
+                     </rdg>
+                     <rdg wit="#R">Biau</rdg>
+                  </app>
+                  <app xml:id="l-99_4" type="graphemic">
+                     <rdg wit="#P">fix</rdg>
+                     <rdg wit="#A">filz</rdg>
+                     <rdg wit="#B">fils</rdg>
+                     <rdg wit="#C">fiuz</rdg>
+                     <rdg wit="#R">fiz</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S"/>
+            </app>
+            <app xml:id="l-99_5" type="order">
+               <!-- est-ce la bonne manière d'encoder la transposition de si, correspondant à il, causée par 
+                                          la mélecture de ce dernier élément ? -->
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S" corresp="#l-99_t4" cause="paleo">si</rdg>
+            </app>, <app xml:id="l-99_6" type="lexsem:weak" subtype="assoc">
+               <rdg wit="#A #B #C #P #R">
+                  <app xml:id="l-99_7" type="graphemic">
+                     <rdg wit="#B #P #R">fait</rdg>
+                     <rdg wit="#A #C">fet</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#S">dist</rdg>
+            </app>
+            <app xml:id="l-99_8" type="order">
+               <rdg wit="#A #B #C #P #R" xml:id="l-99_t4">il</rdg>
+               <rdg wit="#S"/>
+            </app>
+            <app xml:id="l-99_9" type="absence">
+               <rdg wit="#A #B #C #P #R"/>
+               <rdg wit="#S">Bieaux fiz</rdg>
+            </app>, <app xml:id="l-99_10" type="lexsem:weak" subtype="grammeme">
+               <rdg wit="#A #P #R #S">
+                  <app xml:id="l-99_11" type="graphemic">
+                     <rdg wit="#A #P #R #S">je</rdg>
+                     <rdg wit="#B">jo</rdg>
+                  </app>
+               </rdg>
+               <rdg wit="#C">jel</rdg>
+            </app>vos <app xml:id="l-99_12" type="graphemic">
+               <rdg wit="#A #B #C #P #R">otroi</rdg>
+               <rdg wit="#S">otroy</rdg>
+            </app>
+         </l>
+         <l xml:id="l-100" part="N">Vostre <app xml:id="l-100_1" type="graphemic">
+               <rdg wit="#P #B #R">plaisir</rdg>
+               <rdg wit="#A #S">pleisir</rdg>
+               <rdg wit="#C">plesir</rdg>
+            </app>et dites moi </l>
+      </body>
+   </text>
+</TEI>
